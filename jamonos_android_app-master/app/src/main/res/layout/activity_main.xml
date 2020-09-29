@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    <!--Cuando aprendamos ConstraintLayout ya no necesitaremos anidar estos 2 layouts :) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="@dimen/space_x3_5">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="@string/logo"
+
+            />
+
+
+        <!--Ojo que muevo a otros archivos los recursos como margin y string-->
+
+        <TextView
+            android:id="@+id/tv_bienvenida"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/space_x3_5"
+            android:text="@string/titulo_registro"
+            android:textSize="@dimen/title_fsize" />
+
+        <EditText
+            android:id="@+id/et_nombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nombres"
+            android:inputType="textPersonName"
+            android:importantForAutofill="no"
+            android:layout_marginTop="@dimen/space_x3"
+            />
+
+        <EditText
+            android:id="@+id/et_apellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/apellidos"
+            android:inputType="textPersonName"
+            android:importantForAutofill="no"
+            />
+
+        <EditText
+            android:id="@+id/et_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/correoelectronico"
+            android:inputType="textEmailAddress"
+            android:importantForAutofill="no"
+            />
+
+        <EditText
+            android:id="@+id/et_contraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/contraseña"
+            android:inputType="textPassword"
+            android:importantForAutofill="no"
+            />
+
+
+        <!--Completa el resto de la UI según las instrucciones de la actividad, ¡buena suerte!-->
+
+        <!-- Jmmm...deberías prestarle atención al warning :D -->
+        <EditText
+            android:id="@+id/et_repcontraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/repcontraseña"
+            android:importantForAutofill="no"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btn_registrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/negro"
+            android:text="@string/registrarse"
+            />
+
+        <Button
+            android:id="@+id/btn_duda"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginBottom="@dimen/space_x3"
+            android:backgroundTint="@color/negro"
+            android:text="@string/duda"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_excepcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+             />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="-30dp"
+            android:hint="@string/Versiones"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

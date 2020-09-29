@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Incursio</string>
+    <string name="titulo_registro">Be yourself!</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="nombres">Nombres</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="correoelectronico">Escribe tu correo</string>
+    <string name="contraseña">Escribe tu contraseña</string>
+    <string name="repcontraseña">Repetir contraseña</string>
+    <string name="duda">¿Tiene alguna duda?</string>
+    <string name="tuinfo">Esta es tu info</string>
+    <string name="we">Bienvenido:</string>
+    <string name="sayhi">Hello World</string>
+    <string name="Versiones">Notes Release:</string>
+    <string name="logo">Logopreliminar</string>
+
+</resources>
